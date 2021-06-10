@@ -1,0 +1,24 @@
+{
+  "name": "Newtoki Blacklist Utility",
+  "version": "1.0.0.1",
+  "description": "Hides and edits html elements with corresponding title",
+  "permissions": ["tabs", "storage", "scripting", "unlimitedStorage"],
+  "host_permissions": ["https://newtoki95.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://newtoki95.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "icons": {
+    "16": "images/newtokilogo.png",
+    "32": "images/newtokilogo.png",
+    "48": "images/newtokilogo.png",
+    "128": "images/newtokilogo.png"
+  },
+  "options_page": "options.html",
+  "manifest_version": 3
+}
