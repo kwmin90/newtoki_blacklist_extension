@@ -20,7 +20,8 @@ function getWebToonTitle() {
   ).innerText;
   return title;
 }
-//sends the title to the popup.js on request
+
+//sends the title to the bg.js on request
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   switch (message.type) {
     case "getTitle":
