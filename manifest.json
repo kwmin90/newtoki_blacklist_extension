@@ -3,7 +3,7 @@
   "version": "1.0.1.1",
   "description": "Hides and edits html elements with corresponding title",
   "permissions": ["tabs", "storage", "unlimitedStorage", "contextMenus"],
-  "host_permissions": ["https://newtoki96.com/*"],
+  "host_permissions": ["https://newtoki97.com/*", "https://newtoki98.com/*"],
   "action": {
     "default_popup": "popup.html"
   },
@@ -12,7 +12,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://newtoki96.com/*"],
+      "matches": ["https://newtoki97.com/*", "https://newtoki98.com/*"],
       "js": ["contentScript.js"]
     }
   ],
